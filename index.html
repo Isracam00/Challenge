@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+        <main class="presentacion">
+            <section class="presentacion__contenido">
+                <input class="ingresar" id="inputTexto" type="text" placeholder="Ingresa el texto aqui">
+
+                <div class="presentacion__contenido__comentario">
+                    <img class="icon" src="assets/icon.png" alt=""><p class="mensaje">Solo letras minúsculas y sin acentos</p>
+                </div>
+                
+                <div class="presentacion__botones">
+                    <button class="presentacion__botones__encriptar" onclick="encriptar();">Encriptar</button>
+                    <button class="presentacion__botones__desencriptar" onclick="desencriptar();">Desencriptar</button>
+                </div>
+            </section>
+
+            <div class="mensaje_encriptado">
+                <div class="muneco">
+                    <img class="muneco" src="assets/muneco.png" alt="muneco" id="muneco">
+                </div>
+                <div class="mostrar_mensaje">
+                    <p class="mensaje_mostrado" id="textoMostrado">Ningún mensaje fue encontrado</p>
+                    <textarea class="ingresar_texto" name="" id="inputTextoDos" rows="8" cols="80">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+                    <button class="copiar" id="botonCopiar" onclick="copy();">Copiar</button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Desarrollado por Israel Fuentes Camacho</p>
+        </footer>
+    <script src="script.js"> </script>
+</body>
+</html>
